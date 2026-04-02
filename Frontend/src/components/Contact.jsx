@@ -11,6 +11,7 @@ const Contact = () => {
   });
 
   const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
   setFormData({
@@ -21,6 +22,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
   e.preventDefault();
+   setLoading(true);
 
   try {
     const res = await fetch("https://portfolio-backend-45p0.onrender.com/api/contact", {
@@ -41,6 +43,8 @@ const Contact = () => {
 
   } catch (error) {
     console.log(error);
+  }  finally {
+    setLoading(false);
   }
 };
 
@@ -100,8 +104,10 @@ const Contact = () => {
                              />
                          </div>
 
-                         <button type='submit' className='w-full px-6 py-3 bg-purple-500 rounded-lg font-medium hover:bg-purple-700 transition duration-300 cursor-pointer'>
-                            Send 
+                         <button type='submit' 
+                         disabled={loading}
+                         className='w-full px-6 py-3 bg-purple-500 rounded-lg font-medium hover:bg-purple-700 transition duration-300 cursor-pointer disabled:opacity-50'>
+                            {loading ? "Sending..." : "Send"} 
                          </button>
 
                      {/* Success Message */}

@@ -37,7 +37,7 @@ const Work = () => {
 <div className='bg-[#2d2d2d] border border-[#3a3a3a] rounded-2xl p-6'>
   
   {/* Top Row */}
-  <div className='flex items-center mb-3'>
+  {/* <div className='flex items-center mb-3'>
     
     <h3 className='text-xl font-semibold text-white'>
       {data.role}
@@ -47,7 +47,19 @@ const Work = () => {
       {data.duration}
     </span>
 
-  </div>
+  </div> */}
+
+  <div className='flex flex-col sm:flex-row sm:items-center gap-2 mb-3'>
+  
+  <h3 className='text-xl font-semibold text-white'>
+    {data.role}
+  </h3>
+
+  <span className='sm:ml-auto w-fit px-3 py-1 bg-purple-500/20 text-purple-500 rounded-full text-sm whitespace-nowrap'>
+    {data.duration}
+  </span>
+
+</div>
 
   {/* Company */}
   <p className='text-gray-400 mb-2'>
