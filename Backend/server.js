@@ -8,7 +8,9 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 app.use(express.json());
 
 // Routes
@@ -16,7 +18,7 @@ app.use("/api/contact", contactRoutes);
 
 // MongoDB connect
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected"))
+  .then(() => console.log("MongoDB Atlas Connected"))
   .catch(err => console.log(err));
 
 app.listen(process.env.PORT, () => {
