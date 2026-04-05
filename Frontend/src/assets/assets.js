@@ -99,8 +99,8 @@ export const projects = [
     image: hireImg,
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
     icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
-    demo: "#",
-    code: "https://github.com/sahidalam000/HireHub-Role-Based-Job-Portal.git",
+    demo: "https://role-based-job-portal.vercel.app/",
+    code: "https://github.com/sahidalam000/Role-Based-Job-Portal.git",
   },
   {
     title: "Personal Portfolio ",
@@ -108,8 +108,8 @@ export const projects = [
     image: folioImg,
     tech: ["React", "Framer-motion", "Express.js", "MongoDB", "Tailwind CSS",],
     icons: [FaReact, FaDatabase],
-    demo: "#",
-    code: "#",
+    demo: "https://personal-portfolio-web-woad.vercel.app/",
+    code: "https://github.com/sahidalam000/Personal-Portfolio-web.git",
   },
   // {
   //   title: "Portfolio Website",
