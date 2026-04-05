@@ -22,6 +22,14 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
   e.preventDefault();
+
+   // ✅ VALIDATION
+  if (!formData.name || !formData.email || !formData.message) {
+    setSuccess("Please fill all fields!");
+    setTimeout(() => setSuccess(""), 3000);
+    return;
+  }
+
    setLoading(true);
 
   try {
@@ -36,10 +44,11 @@ const Contact = () => {
     const data = await res.json();
 
     setSuccess(data.message);
+    setFormData({ name: "", email: "", message: "" });
+
     setTimeout(() => {
   setSuccess("");
 }, 3000);
-    setFormData({ name: "", email: "", message: "" });
 
   } catch (error) {
     console.log(error);
@@ -79,6 +88,7 @@ const Contact = () => {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
+                            required
                              />
                          </div>
 
@@ -90,6 +100,7 @@ const Contact = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
+                            required
                              />
                          </div>
 
@@ -101,6 +112,7 @@ const Contact = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
+                            required
                              />
                          </div>
 
