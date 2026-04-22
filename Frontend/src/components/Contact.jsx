@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 import { motion } from 'framer-motion'
 import { FaDribbble, FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone, FaTwitter } from 'react-icons/fa'
 
@@ -25,8 +26,7 @@ const Contact = () => {
 
    // ✅ VALIDATION
   if (!formData.name || !formData.email || !formData.message) {
-    setSuccess("Please fill all fields!");
-    setTimeout(() => setSuccess(""), 3000);
+    toast.error("Please fill all fields!");
     return;
   }
 
@@ -43,15 +43,16 @@ const Contact = () => {
 
     const data = await res.json();
 
-    setSuccess(data.message);
+    if (res.ok) {
+      toast.success(data.message); // ✅ SUCCESS TOAST
     setFormData({ name: "", email: "", message: "" });
+  } else {
+      toast.error(data.error || "Something went wrong");
+    }
 
-    setTimeout(() => {
-  setSuccess("");
-}, 3000);
 
   } catch (error) {
-    console.log(error);
+    toast.error("Server Error");
   }  finally {
     setLoading(false);
   }
@@ -141,17 +142,6 @@ const Contact = () => {
   </motion.div>
 )} */}
 
-   {success && (
-  <motion.div
-    initial={{ opacity: 0, y: -50 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -50 }}
-    transition={{ duration: 0.4, ease: "easeOut" }}
-    className='fixed top-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-lg bg-purple-500/10 border border-purple-500 text-purple-400 font-medium shadow-lg backdrop-blur-md'
-  >
-    {success}
-  </motion.div>
-)}
 
                     </form>
                 </div>
