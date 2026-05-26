@@ -11,6 +11,7 @@ import projectImg6 from '../assets/project6.avif';
 import foodImg from '../assets/food.avif';
 import hireImg from '../assets/hire.avif';
 import folioImg from '../assets/folio.avif';
+import brightImg from '../assets/bright.avif';
 
 
 
@@ -85,13 +86,13 @@ export const skills = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
-    image: foodImg,
-    tech: ["React", "Node.js", "Express.js", "MongoDB","Bootstrap", "Redux","Cloudinary", "Stripe"],
+    title: "Bright Future Tutoring — A Learning Platform",
+    description: "A complete MERN-based Tuition Management System featuring student enrollment, admin approval workflows, dashboards, student information, performance tracking, study materials, schedules, fee management, authentication, and responsive mobile support.",
+    image: brightImg,
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB Atlas","Tailwind CSS", "JWT","Cloudinary", "Framer Motion", "Multer", "REST API"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
-    demo: "#",
-    code: "https://github.com/sahidalam000/Food-Delivery-Website-.git",
+    demo: "https://brightfuturetutoring.vercel.app/",
+    code: "https://github.com/sahidalam000/Tuition-Management-System.git",
   },
   {
     title: "A Role-Based Job Portal",
