@@ -171,7 +171,7 @@ const About = () => {
           </p>
 
           <p className='text-white/60 text-sm mt-1'>
-            Percentage: <span className='font-semibold text-white'>84%</span>
+            Percentage: <span className='font-semibold text-white'>83%</span>
           </p>
 
         </div>

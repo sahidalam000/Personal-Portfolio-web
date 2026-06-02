@@ -69,6 +69,10 @@ const Work = () => {
   {/* Description */}
   <p className='text-gray-300'>
     {data.description}
+    <br />
+    • Built features for integrated for cart, order tracking, payment and user authentication to enhance user engagement and
+data security.
+
   </p>
 
 </div>

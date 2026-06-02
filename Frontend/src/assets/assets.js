@@ -48,13 +48,13 @@ export const skills = [
     title: 'Frontend Development',
     icon: FaReact,
     description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['JavaScript','React.js', 'Tailwind CSS', 'Redux', ]
+    tags: ['JavaScript','React.js', 'Tailwind CSS', 'Bootstrap', 'Redux', 'Axios', 'Framer Motion', 'Material UI']
   },
   {
     title: 'Backend Development',
     icon: FaServer,
     description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Node.js', 'Express.js', 'Rest API', ]
+    tags: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication',  'Multer']
   },
   {
     title: 'Database Management',
@@ -78,7 +78,7 @@ export const skills = [
     title: 'Tools & Technologies',
     icon: FaTools,
     description: 'Essential tools and technologies I use in my development workflow.',
-    tags: ['Git & GitHub', 'VS Code', 'Postman', 'Figma']
+    tags: ['Git & GitHub', 'VS Code', 'Postman', 'npm', 'Cloudinary', 'Stripe', 'MS Office']
   }
 ];
 
@@ -95,23 +95,23 @@ export const projects = [
     code: "https://github.com/sahidalam000/Tuition-Management-System.git",
   },
   {
-    title: "A Role-Based Job Portal",
-    description: " Implemented core features including job posting, application tracking, profile management, and personalized dashboards for both user roles.",
+    title: "HireHub - A Role-Based Job Portal",
+    description: "Developed and deployed a full-stack job portal with role-based access control for Employers and Job Seekers.Implemented core features including job posting, application tracking, profile management and personalized dashboards for both user roles.Integrated JWT authentication and developed scalable RESTful APIs to ensure secure and reliable data handling",
     image: hireImg,
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB Atlas", "Bootstrap", "JWT", "REST API", "Cloudinary"],
     icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
     demo: "https://role-based-job-portal.vercel.app/",
     code: "https://github.com/sahidalam000/Role-Based-Job-Portal.git",
   },
-  {
-    title: "Personal Portfolio ",
-    description: "A modern and responsive portfolio website showcasing my skills, projects, and experience with smooth animations and an intuitive user interface.",
-    image: folioImg,
-    tech: ["React", "Framer-motion", "Express.js", "MongoDB", "Tailwind CSS",],
-    icons: [FaReact, FaDatabase],
-    demo: "https://personal-portfolio-web-woad.vercel.app/",
-    code: "https://github.com/sahidalam000/Personal-Portfolio-web.git",
-  },
+  // {
+  //   title: "Personal Portfolio ",
+  //   description: "A modern and responsive portfolio website showcasing my skills, projects, and experience with smooth animations and an intuitive user interface.",
+  //   image: folioImg,
+  //   tech: ["React", "Framer-motion", "Express.js", "MongoDB", "Tailwind CSS",],
+  //   icons: [FaReact, FaDatabase],
+  //   demo: "https://personal-portfolio-web-woad.vercel.app/",
+  //   code: "https://github.com/sahidalam000/Personal-Portfolio-web.git",
+  // },
   // {
   //   title: "Portfolio Website",
   //   description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
@@ -148,17 +148,17 @@ export const workData = [
     company: "Webstack Academy, Bengaluru ",
     duration: "July 2024 – Sept 2024",
     description:
-      "Developed and maintained a full-stack food ordering web applications using the MERN & Built features for integrated for order tracking and user authentication to enhance user engagement and data security.",
+      "• Developed and maintained a full-stack E-Commerce food ordering web applications using the React.js, Node.js, Express.js, MongoDB, Bootsrap, Restful API’s, Cloudinary, Stripe, Redux. " ,
     color: "purple"
   },
-  {
-    role: "Web Development Summer Internship (Remote)",
-    company: "Prodigy Infotech, Mumbai",
-    duration: "July 2024 – Aug 2024",
-    description:
-      "Developed personal portfolio website using HTML, CSS & JavaScript & Built a functional stopwatch web app featuring start, stop & reset controls, improving DOM manipulation & JavaScript proficiency.",
-    color: "pink"
-  },
+  // {
+  //   role: "Web Development Summer Internship (Remote)",
+  //   company: "Prodigy Infotech, Mumbai",
+  //   duration: "July 2024 – Aug 2024",
+  //   description:
+  //     "Developed personal portfolio website using HTML, CSS & JavaScript & Built a functional stopwatch web app featuring start, stop & reset controls, improving DOM manipulation & JavaScript proficiency.",
+  //   color: "pink"
+  // },
   // {
   //   role: "Junior Developer",
   //   company: "StartUp Ventures",
