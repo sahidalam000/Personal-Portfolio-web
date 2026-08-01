@@ -12,6 +12,7 @@ import foodImg from '../assets/food.avif';
 import hireImg from '../assets/hire.avif';
 import folioImg from '../assets/folio.avif';
 import brightImg from '../assets/bright.avif';
+import shopnowImg from '../assets/shopnow.avif';
 
 
 
@@ -86,7 +87,7 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Bright Future Tutoring — A Learning Platform",
+    title: "Bright Future Tutoring — An Education Management System",
     description: "A complete MERN-based Tuition Management System featuring student enrollment, admin approval workflows, dashboards, student information, performance tracking, study materials, schedules, fee management, authentication, and responsive mobile support.",
     image: brightImg,
     tech: ["React.js", "Node.js", "Express.js", "MongoDB Atlas","Tailwind CSS", "JWT","Cloudinary", "Framer Motion", "Multer", "REST API"],
@@ -103,15 +104,15 @@ export const projects = [
     demo: "https://role-based-job-portal.vercel.app/",
     code: "https://github.com/sahidalam000/Role-Based-Job-Portal.git",
   },
-  // {
-  //   title: "Personal Portfolio ",
-  //   description: "A modern and responsive portfolio website showcasing my skills, projects, and experience with smooth animations and an intuitive user interface.",
-  //   image: folioImg,
-  //   tech: ["React", "Framer-motion", "Express.js", "MongoDB", "Tailwind CSS",],
-  //   icons: [FaReact, FaDatabase],
-  //   demo: "https://personal-portfolio-web-woad.vercel.app/",
-  //   code: "https://github.com/sahidalam000/Personal-Portfolio-web.git",
-  // },
+  {
+    title: "ShopNow - An E-Commerce Platform",
+    description: " Built a complete e-commerce web application using the MERN stack.The platform features full user auth, product browsing with search/filter/sort/pagination, a persistent shopping cart, order tracking, product reviews, wishlists, and a full admin dashboard for order management.",
+    image: shopnowImg,
+    tech: ["React", "Node.js", "Express.js", "MongoDB Atlas", "Tailwind CSS", "Context API", "REST API", "Axios", "JWT", "Mongoose ODM"],
+    icons: [FaReact, FaDatabase],
+    demo: "https://shopnow-plateforom.vercel.app/",
+    code: "https://github.com/sahidalam000/ShopNow---E-Commerce-Plateform.git",
+  },
   // {
   //   title: "Portfolio Website",
   //   description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
@@ -144,12 +145,20 @@ export const projects = [
 
 export const workData = [
   {
+    role: "Freelancer as a Software Developer",
+    company: "Fiverr",
+    duration: " June 2026 - present",
+    description:
+      "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
+    color: "Purple"
+  },
+  {
     role: "Full Stack Web Development Internship (Remote) ",
     company: "Webstack Academy, Bengaluru ",
     duration: "July 2024 – Sept 2024",
     description:
-      "• Developed and maintained a full-stack E-Commerce food ordering web applications using the React.js, Node.js, Express.js, MongoDB, Bootsrap, Restful API’s, Cloudinary, Stripe, Redux. " ,
-    color: "purple"
+      "• Developed and maintained a full-stack E-Commerce food ordering web applications using the MERN stack. Built features for integrated for cart, order tracking, payment and user authentication to enhance user engagement and data security.   " ,
+      color: "purple"
   },
   // {
   //   role: "Web Development Summer Internship (Remote)",

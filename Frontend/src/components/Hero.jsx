@@ -24,7 +24,7 @@ const Hero = () => {
          </h1>
 
          <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter'>
-            Full Stack Developer 
+            Software Engineer 
          </h2>
          
       
@@ -34,7 +34,7 @@ const Hero = () => {
       <br />
          <div className='flex space-x-4'> 
             <a href="#projects" className='px-6 py-3 bg-purple-500 rounded-lg font-medium hover:bg-purple-700 transition duration-300'>View Work</a>
-            <a href="/resumeSahid.pdf" target='_blank' rel='noopener noreferrer' className='px-6 py-3 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500/20 transition duration-300'>My Resume</a>
+            <a href="/Sahidcompressed.pdf" target='_blank' rel='noopener noreferrer' className='px-6 py-3 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500/20 transition duration-300'>My Resume</a>
          </div>
        </div>
 
